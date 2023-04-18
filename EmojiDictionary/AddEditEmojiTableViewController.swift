@@ -71,14 +71,14 @@ class AddEditEmojiTableViewController: UITableViewController {
        sender: Any?) {
         
         guard segue.identifier == "saveUnwind" else { return }
-        print(segue.identifier)
+        //print(segue.identifier)
         let symbol = symbolTextField.text!
         let name = nameTextField.text ?? ""
         let description = descriptionTextField.text ?? ""
         let usage = usageTextField.text ?? ""
         emoji = Emoji(symbol: symbol, name: name,
            description: description, usage: usage)
-        print("from save segue \(emoji)")
+        //print("from save segue \(emoji)")
     }
     
     
